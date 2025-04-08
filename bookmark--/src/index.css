@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+
+
+/* ### Primary
+
+- Blue 600: hsl(231, 69%, 60%)
+- Red 400: hsl(0, 94%, 66%)
+
+### Neutral
+
+- Grey 50: hsl(0, 0%, 97%)
+- Blue 950: hsl(229, 31%, 21%)
+Weights: 400, 500
+Font size: 18px */
+
+
+
+@layer base{
+
+h1{
+  @apply text-blue-950
+}
+  p{
+    @apply text-base text-blue-950
+  }
+  h2 {
+    @apply md:text-2xl font-bold text-blue-950
+  }
+  h3{
+    @apply md:text-xl font-bold text-blue-950
+  }
+  h4{
+    @apply md:text-lg font-bold text-blue-950
+  }
+}
+
+@layer components {
+  .body {
+    font-family: 'Rubik';
+    /* @apply  md:max-w-screen-2xl  px-4 sm:px-6 lg:px-8 text-blue-950 */
+  }
+
+  .container-center {
+    @apply md:max-w-screen-xl mx-auto md:px-20 px-8;
+  }
+
+  .btn {
+    font-family: 'Rubik';
+    @apply bg-blue-600 rounded-sm px-6 py-2 text-white font-normal border-2 border-transparent hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600 cursor-pointer 
+  }
+  .btn-red {
+    @apply bg-red-400  hover:text-red-400 border-2 border-transparent hover:border-red-400 hover:bg-white rounded-sm px-6 py-2 text-white font-normal cursor-pointer 
+
+  }
+
+  .btn-white{
+    @apply bg-white text-blue-950 border-2 border-transparent shadow-md rounded-sm px-6 py-2  font-normal  hover:text-blue-600 hover:border-2 hover:border-blue-600 cursor-pointer 
+  }
+
+  /* hero section */
+  .landing{
+    @apply md:h-screen
+  }
+
+  /* navigation */
+
+  .nav{
+    @apply flex justify-between items-center py-8 pb-4 
+  }
+
+  .nav-links {
+@apply  hidden md:flex md:flex-row md:gap-6 md:items-center md:block
+
+
+  }
+
+  .nav-links li {
+    @apply hover:text-red-400
+  }
+
+  .mobile-nav{
+    @apply md:hidden
+  }
+
+  .mobile-menu{
+   @apply fixed top-0 left-0 w-full h-screen bg-blue-950 z-50 px-8 py-6 opacity-90 md:hidden transition-all duration-300 ease-in-out
+   }
+  
+  .mobile-menu-img{
+    @apply flex justify-between 
+  }
+
+  .mobile-menu-links{
+    @apply flex flex-col gap-6 items-center border-b-0 border-b-white mt-4 text-white font-light
+
+  }
+
+  .mobile-menu-links li{
+    @apply border-b border-b-white w-full text-center pb-4
+  }
+
+  .mobile-menu-btn{
+    font-family: 'Rubik';
+    @apply bg-blue-950 rounded-sm px-6 py-2 text-white font-normal border-2 border-transparent hover:bg-transparent hover:text-white hover:border-2 hover:border-white cursor-pointer w-full mt-4
+
+  }
+
+  .mobile-menu-icons{
+    @apply flex flex-row gap-6 items-center justify-center mt-60
+
+  }
+
+  /* hero section */
+  .hero{
+    @apply flex md:flex-row mt-20 items-center flex-col-reverse
+  }
+
+  .hero-left{
+    @apply flex items-center md:items-start flex-col md:flex-col gap-8 md:w-1/2 w-full mb-20
+  }
+
+  .hero-right{
+    @apply w-full md:w-1/2 mb-16
+  }
+
+  .hero-right img{
+    @apply  z-10 relative
+  }
+
+  .blue-bg{
+    @apply absolute top-60 md:top-80 right-0 w-3/4 md:w-2/5 h-2/5 bg-blue-600 rounded-l-full z-0
+  }
+
+  .hero h1{
+    @apply  text-2xl text-center md:text-start md:text-4xl font-bold text-blue-950 
+  }
+
+  .hero p {
+    @apply  text-center md:text-start
+  }
+
+  .hero-btn-div{
+    @apply flex flex-row gap-4 
+  }
+
+  
+  /* features section */
+.features{
+  @apply flex justify-center items-center flex-col gap-4 md:h-screen
+}
+
+.body-p{
+  @apply text-sm md:w-7/20 text-center
+
+}
+
+.features .info-button{
+  @apply hidden md:inline
+}
+
+
+.tabs {
+  @apply relative flex flex-col md:flex-row flex-wrap gap-8 px-4 py-6;
+}
+
+.tabs button{
+  font-family: 'Rubik';
+  @apply relative text-blue-950 bg-white border-b-2 pb-2
+}
+
+.active-tab{
+@apply border-red-400 
+}
+
+.inactive-tab{
+  @apply border-transparent 
+}
+.tab-content{
+  @apply flex items-center justify-center mt-5 flex-col md:flex-row
+
+}
+.tab-content-left{
+  @apply w-full md:w-1/2
+
+}
+
+.tab-content-right{
+  @apply flex items-center mt-30 md:items-start flex-col w-full gap-8 md:w-1/2 md:pr-45  text-center md:md:text-start
+}
+
+.tab-content-left img {
+  @apply w-full md:w-7/10 z-10 relative md:ml-24
+}
+
+.blue-bg-left{
+  @apply absolute top-318 md:top-240 left-0  w-3/4 h-1/2 md:w-3/10 md:h-2/5 bg-blue-600 rounded-r-full z-0
+
+}
+
+/* .blue-bg-open{
+  @apply 
+  }
+  
+  .blue-bg-left-open {
+  @apply
+  } */
+  
+/* extension section */
+
+.extension{
+@apply mt-30 mb-12 flex flex-col items-center gap-4 md:h-screen
+}
+
+.extension-cards{
+  @apply flex flex-row justify-evenly mt-20 gap-8
+
+}
+
+.extension-card{
+@apply bg-white shadow-md shadow-gray-400 p-4 flex flex-col items-center gap-2 rounded-lg
+}
+
+.extension-card img{
+  @apply w-18
+}
+
+.body-s{
+  @apply text-sm mb-4
+}
+
+
+/* accordion section */
+.accordion{
+  @apply flex flex-col items-center md:h-screen
+}
+.acc-cont{
+  @apply py-2 flex flex-col items-center md:w-1/2 w-full
+  }
+  
+  .faq {
+    @apply flex flex-col items-center justify-center 
+  }
+
+/* contact  section */
+.contact{
+  font-family: 'Rubik';
+  @apply bg-blue-600 w-full flex flex-col items-center mt-12 md:p-12 md:gap-10 p-6 gap-4
+}
+
+.contact h3,h1{
+  @apply text-white
+}
+.contact h3{
+  @apply uppercase font-normal
+}
+
+.contact h1{
+  @apply font-medium text-2xl md:text-4xl w-full md:w-2/5 text-center
+}
+
+form{
+  @apply flex flex-col md:flex-row gap-4 items-center justify-center
+}
+
+input{
+  @apply bg-white px-6 py-2 md:ml-3 rounded-md md:space-y-8 w-fit
+}
+
+form button{
+  @apply w-full
+}
+
+.footer{
+  font-family: 'Rubik';
+  @apply bg-blue-950 w-full flex flex-col md:flex-row items-center justify-between  p-6 gap-6
+
+}
+.footer-icons , .footer-links{
+  @apply flex flex-row gap-6 text-white
+}
+
+.footer-links {
+  @apply flex-col md:flex-row
+}
+
+.footer-links li{
+  @apply  hover:text-red-400
+}
+
+
+}
