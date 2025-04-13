@@ -10,7 +10,7 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 ### Links
 
 - Solution URL:[solution](https://)
-- Live Site URL:[Live Site](https://landingpage-one-rho.vercel.app/)
+- Live Site URL:[Live Site](https://bookmarklanding.vercel.app/)
 
 
 ### Built with

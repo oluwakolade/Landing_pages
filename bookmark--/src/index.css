@@ -130,7 +130,7 @@ h1{
   }
 
   .blue-bg{
-    @apply absolute top-60 md:top-80 right-0 w-3/4 md:w-2/5 h-2/5 bg-blue-600 rounded-l-full z-0
+    @apply absolute top-60 md:top-80 right-0 w-3/4 h-1/5 md:w-2/5 md:h-2/5 bg-blue-600 rounded-l-full z-0
   }
 
   .hero h1{
@@ -195,7 +195,7 @@ h1{
 }
 
 .blue-bg-left{
-  @apply absolute top-318 md:top-240 left-0  w-3/4 h-1/2 md:w-3/10 md:h-2/5 bg-blue-600 rounded-r-full z-0
+  @apply absolute top-318 md:top-240 left-0  w-3/4 h-1/5 md:h-1/2 md:w-3/10 md:h-2/5 bg-blue-600 rounded-r-full z-0
 
 }
 
