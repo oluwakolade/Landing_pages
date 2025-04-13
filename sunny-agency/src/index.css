@@ -59,7 +59,7 @@
 
   h1 {
 
-    @apply text-3xl uppercase font-bold text-center text-white sm:text-4xl mb-50 md:mb-32
+    @apply text-3xl uppercase font-bold text-center text-white sm:text-4xl pt-12 mb-78  sm:mb-50 md:mb-32
   }
 
 
@@ -93,7 +93,7 @@
   }
 
   .card {
-    @apply py-32 px-32 flex flex-col md:px-24 md:py-8 justify-center items-center md:items-start md:w-1/2
+    @apply w-full h-120 py-4 px-8 flex flex-col md:px-24 md:py-8 justify-center object-center items-center md:items-start md:w-1/2
   }
 
   .card h2 {
@@ -106,15 +106,21 @@
     @apply text-sm font-semibold text-center md:text-start
   }
 
-  .card-img {
-    @apply md:w-1/2
+ 
+
+ .card-bg-one{
+    @apply bg-[url(/mobile/image-transform.jpg)] md:bg-[url(/desktop/image-transform.jpg)] bg-cover bg-center bg-no-repeat
   }
+
+  .card-bg-two{
+    @apply bg-[url(/mobile/image-stand-out.jpg)] md:bg-[url(/desktop/image-stand-out.jpg)] bg-cover bg-center bg-no-repeat
+  } 
 
   .btm-card {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    @apply h-150 w-screen flex flex-col items-center px-30 text-center pt-100 md:w-1/2
+    @apply h-150 w-screen flex flex-col items-center px-8 md:px-30 text-center pt-100 md:w-1/2
   }
 
   .card button {
@@ -144,12 +150,12 @@
   }
 
   .btm-card-one {
-    background-image: url('/desktop/image-graphic-design.jpg');
+   @apply bg-[url(/mobile/image-graphic-design.jpg)] md:bg-[url(/desktop/image-graphic-design.jpg)] ;
 
   }
 
   .btm-card-two {
-    background-image: url('/desktop/image-photography.jpg');
+   @apply bg-[url(/mobile/image-photography.jpg)] md:bg-[url(/desktop/image-photography.jpg)] ;
 
   }
 

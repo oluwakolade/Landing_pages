@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import "tailwindcss";
+
+/* ### Primary
+
+- Dark Gray: hsl(0, 0%, 63%)
+- Black: hsl(0, 0%, 0%)
+- White: hsl(0, 0%, 100%)
+- Very Dark Gray: hsl(0, 0%, 27%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 16px
+- - Weights: 500, 600, 700 */
+* {
+    font-family: 'League Spartan';
+}
+
+@layer base {
+    main {
+        @apply h-screen flex flex-col w-screen
+    }
+
+    h1 {
+        @apply text-4xl font-black text-gray-950 md:text-start
+    }
+
+    h2 {
+        @apply text-xl font-semibold uppercase text-gray-950 md:text-start pb-2
+    }
+
+    p {
+        @apply text-base font-normal text-gray-600 md:text-start
+    }
+
+    button {
+        @apply text-base uppercase font-semibold text-gray-950 border-0 flex flex-row gap-4 tracking-wide
+    }
+
+    li {
+        @apply text-base font-normal text-white
+    }
+
+    ul {
+        @apply flex flex-row gap-4
+    }
+
+}
+
+@layer components {
+   
+
+    .top {
+        @apply h-13/20 flex flex-row
+    }
+
+    .top-left {
+        @apply w-3/5 relative overflow-hidden;
+    }
+
+    .top-right {
+        @apply w-2/5 px-20 py-12 space-y-4
+    }
+
+    .img-desktop{
+        @apply hidden md:block absolute inset-0 w-full h-full object-cover; 
+    }
+
+    .nav {
+        @apply absolute top-0 left-0 z-10 flex flex-row items-center gap-12 p-8; 
+    }
+
+    .img-mobile{
+        @apply md:hidden
+    }
+
+    .bottom {
+        @apply h-7/20 flex flex-row
+    }
+
+    .btm-one {
+        @apply flex-1 h-full
+    }
+
+    .btm-one img{
+        @apply h-full object-cover
+    }
+
+    .btm-two {
+        @apply flex-2 p-6
+    }
+
+    .slider-btn{
+        @apply   absolute left-0 top-85 flex flex-row 
+    }
+
+    .black{
+        @apply bg-black p-4 
+    }
+
+}

@@ -27,16 +27,12 @@ function App() {
           btn={"btn-one"}
           order={"order-1 md:order-1 "}
         />
-        <img
-          src="/desktop/image-transform.jpg"
-          alt="transform"
-          className="card-img , order-2 md:order-2  w-1/2"
-        />
-        <img
-          src="./desktop/image-stand-out.jpg"
-          alt="standout"
-          className="card-img, order-4 md:order-3 w-1/2 "
-        />
+
+        <div className="order-2 md:order-2  w-full h-120 md:w-1/2 card-bg-one   ">
+        </div>
+
+        <div className="order-4 md:order-3  w-full h-120 md:px- md:w-1/2 card-bg-two"></div>
+
 
         <Card
           title={"Stand out to the right audience"}
